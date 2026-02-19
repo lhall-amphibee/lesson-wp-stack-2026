@@ -8,13 +8,12 @@ class Metaboxes
     {
         // Add metabox
         add_action('add_meta_boxes', [$this, 'custom_metabox']);
-        $this->custom_metabox();
         // Save meta data
         add_action('save_post', [$this, 'save_custom_metabox_data']);
         add_filter('render_block', [$this, 'inject_event_date_after_content'], 10, 2);
     }
 
-    private function custom_metabox(): void
+    public function custom_metabox(): void
     {
         add_meta_box(
             'event_metabox',
