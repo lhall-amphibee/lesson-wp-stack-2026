@@ -12,6 +12,8 @@ class CustomFields
 {
     public function register(): void
     {
+        add_action( 'init', [ $this, 'register_meta' ] );
+
         $field_group = new Group("Codifier fields");
         $field_group->set_key('custom_fields')
             ->register();
@@ -30,5 +32,22 @@ class CustomFields
                'paid' => __('Paid', 'events-manager'),
             ]);
         $field_group->add_field($event_type_field);
+    }
+
+    public function register_meta(): void
+    {
+        $shared = [
+            'object_subtype' => PostType::POST_TYPE,
+            'single'         => true,
+            'show_in_rest'   => true,
+        ];
+
+        register_post_meta( PostType::POST_TYPE, 'organisateur', array_merge( $shared, [
+            'type' => 'string',
+        ] ) );
+
+        register_post_meta( PostType::POST_TYPE, 'event_type', array_merge( $shared, [
+            'type' => 'string',
+        ] ) );
     }
 }
