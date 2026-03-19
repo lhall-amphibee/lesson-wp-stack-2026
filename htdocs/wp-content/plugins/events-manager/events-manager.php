@@ -43,3 +43,17 @@ require_once 'inc/Taxonomies.php';
 (new Taxonomies())->register();
 (new CustomFields())->register();
 
+add_action('init', function() {
+    register_block_type( __DIR__ . '/build' );
+
+    register_block_style( 'events-manager/evenement-list', [
+        'name'  => 'liste',
+        'label' => 'Liste',
+    ] );
+
+    register_block_style( 'events-manager/evenement-list', [
+        'name'  => 'clair',
+        'label' => 'Clair',
+    ] );
+});
+
