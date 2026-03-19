@@ -1,0 +1,125 @@
+# Copyright (C) 2026 MMI3
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MMI3 Web 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mmi3-web\n"
+"POT-Creation-Date: 2026-03-19T10:13:00+01:00\n"
+"PO-Revision-Date: 2026-03-19 10:29+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: mmi3-web\n"
+
+#. Plugin Name of the plugin
+#: mmi3-web.php
+msgid "MMI3 Web"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: mmi3-web.php
+msgid "https://example.com/mmi3-web"
+msgstr ""
+
+#. Description of the plugin
+#: mmi3-web.php
+msgid "A custom plugin for MMI3 Web."
+msgstr ""
+
+#. Author of the plugin
+#: mmi3-web.php
+msgid "MMI3"
+msgstr ""
+
+#. Author URI of the plugin
+#: mmi3-web.php
+msgid "https://example.com"
+msgstr ""
+
+#: mmi3-web.php:31
+msgid "Événements"
+msgstr "Événements"
+
+#: mmi3-web.php:32
+msgid "Événement"
+msgstr ""
+
+#: mmi3-web.php:33
+msgid "Ajouter"
+msgstr ""
+
+#: mmi3-web.php:34
+msgid "Ajouter un événement"
+msgstr "Ajouter un événementtttt"
+
+#: mmi3-web.php:35
+msgid "Modifier l'événement"
+msgstr ""
+
+#: mmi3-web.php:36
+msgid "Nouvel événement"
+msgstr ""
+
+#: mmi3-web.php:37
+msgid "Voir l'événement"
+msgstr ""
+
+#: mmi3-web.php:38
+msgid "Rechercher des événements"
+msgstr ""
+
+#: mmi3-web.php:39
+msgid "Aucun événement trouvé"
+msgstr ""
+
+#: mmi3-web.php:40
+msgid "Aucun événement dans la corbeille"
+msgstr ""
+
+#: mmi3-web.php:41
+msgid "Tous les événements"
+msgstr ""
+
+#: mmi3-web.php:42
+msgid "Archives des événements"
+msgstr ""
+
+#: mmi3-web.php:64
+msgid "Thèmes"
+msgstr ""
+
+#: mmi3-web.php:65
+msgid "Thème"
+msgstr ""
+
+#: mmi3-web.php:66
+msgid "Rechercher des thèmes"
+msgstr ""
+
+#: mmi3-web.php:67
+msgid "Tous les thèmes"
+msgstr ""
+
+#: mmi3-web.php:68
+msgid "Modifier le thème"
+msgstr ""
+
+#: mmi3-web.php:69
+msgid "Mettre à jour le thème"
+msgstr ""
+
+#: mmi3-web.php:70
+msgid "Ajouter un thème"
+msgstr ""
+
+#: mmi3-web.php:71
+msgid "Nouveau thème"
+msgstr ""
+
+#: mmi3-web.php:72
+msgid "Aucun thème trouvé"
+msgstr ""
