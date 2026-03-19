@@ -17,6 +17,7 @@
  * @package EventsManager
  */
 
+use EventsManager\Archive;
 use EventsManager\CustomFields;
 use EventsManager\Metaboxes;
 use EventsManager\PostType;
@@ -28,11 +29,15 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+define('EVENTS_MANAGER_PATH', plugin_dir_path(__FILE__));
+
+require_once 'inc/Archive.php';
 require_once 'inc/CustomFields.php';
 require_once 'inc/Metaboxes.php';
 require_once 'inc/PostType.php';
 require_once 'inc/Taxonomies.php';
 
+(new Archive())->register();
 (new Metaboxes())->register();
 (new PostType())->register();
 (new Taxonomies())->register();

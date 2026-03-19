@@ -16,6 +16,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Load plugin text domain.
+ */
+function mmi3_web_load_textdomain() {
+    load_plugin_textdomain( 'mmi3-web', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'mmi3_web_load_textdomain' );
+
+/**
  * Register the "Evenement" custom post type.
  */
 function mmi3_web_register_evenement_cpt() {
