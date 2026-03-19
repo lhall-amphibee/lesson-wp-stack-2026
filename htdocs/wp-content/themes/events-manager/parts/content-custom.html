@@ -1,0 +1,18 @@
+<!-- wp:group {"className":"custom-content"} -->
+<div class="wp-block-group custom-content">
+    <!-- wp:heading -->
+    <h2>Custom Content Section</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:group {"className":"content-wrapper"} -->
+    <div class="wp-block-group content-wrapper">
+        <!-- wp:html -->
+        <?php
+        $field_value = get_field('your_field_name');
+        echo esc_html($field_value);
+        ?>
+        <!-- /wp:html -->
+    </div>
+    <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
