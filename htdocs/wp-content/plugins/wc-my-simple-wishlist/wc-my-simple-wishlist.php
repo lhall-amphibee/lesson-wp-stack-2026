@@ -13,8 +13,12 @@ Version: 1.0.0
 */
 
 require_once 'inc/Wishlist.php';
+require_once 'inc/Cron.php';
+require_once 'inc/Email.php';
 require_once 'inc/Ajax.php';
 
 (new \SimpleWishlist\Wishlist())->register();
 (new \SimpleWishlist\Ajax())->register();
 (new \SimpleWishlist\Cron())->register();
+
+(new \SimpleWishlist\Cron())->activateCron();
