@@ -1,0 +1,7 @@
+.wishlist-add-product {
+    display: inline-block;    
+}
+
+.wishlist-add-product img {
+    height: 60px !important;
+}
